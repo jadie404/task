@@ -1,0 +1,78 @@
+/*This is styles document for the shopping.html*/
+
+/*This is the formatting for the inner side of the card*/
+.flip-card-inner {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+
+/*This is the formatting for when the mouse hovers over a card*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/*This is the formatting for when the card flips over*/
+.flip-card-front {
+  position: absolute;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+/*This is the formatting for when the card flips over*/
+.flip-card-back {
+  position: absolute;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  transform: rotateY(180deg);
+  padding: 20px;
+  background-color: #f8f4f4;
+}
+
+/*This is the formatting for a margin for the cards*/
+.product-col {
+  margin-left: 30px;
+}
+
+/*This is the formatting for the size of the image*/
+.product-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*This is the formatting for the margin of the cards*/
+.cards-row {
+  margin-top: 20px;
+}
+
+/*This is the formatting to make sure the images are the same size*/
+.same-size-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*This is the formatting to make the product info the same background colour*/
+.product-info {
+  background-color: #f8f4f4;
+}
+
+

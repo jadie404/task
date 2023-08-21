@@ -1,0 +1,60 @@
+/* bookstore/static/styles.css */
+
+/* Formatting for the book cards */
+.book-card {
+  background-color: #f8f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Formatting for the book titles */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Formatting for the book details */
+.card-text {
+  font-size: 14px;
+}
+
+/* Formatting for the 'Add to Cart' button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Remove border and box shadow from the card */
+.card {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  font-size: 20px; /* Increase the font size as needed */
+}
+
+.contact-item i {
+  margin-right: 10px;
+  color: #007bff; /* Change the color to your preferred color */
+}
+
+/* Remove default list styles (bullet points) */
+.contact-info li::before {
+  display: none;
+}
